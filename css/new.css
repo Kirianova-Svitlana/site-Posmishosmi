@@ -9,7 +9,7 @@ body, header .row, header .container, .middle{
 /* body, wrapper, footer
 -----------------------------------------------------------------------------*/
 body{
-  background-color: #f8e7ba;
+  background-color: #fdffa8;
   color:#5D7274;/*основний колір всього тексту сірий*/
   font: 14px/20px 'Caveat Brush', cursive;
   height: 100%;
@@ -37,7 +37,7 @@ body{
 /* header
 -----------------------------------------------------------------------------*/
 .header{
-  background: url(../images2/aniheader.png);
+  background: url(../images2/aniheader2.png);
   background-position: right top;
   background-repeat: no-repeat;
   padding: 0;
@@ -65,7 +65,7 @@ body{
 .txt_napus1 {
   margin: 0;
   padding-left: 100px;
-  color: #EE9E69;/*Додаткой колір світло оранжевий*/
+  color: #E67529;/*Додаткой колір світло оранжевий*/
   text-transform: uppercase;
   margin-top: 2px;
 }
@@ -95,7 +95,7 @@ body{
 }
 
 .col-sm-5 a{
-  color: #E47450;/*додатковий яскраво-оранжевий*/
+  color: #e6630c;/*додатковий яскраво-оранжевий*/
 }
 
 @media(max-width: 768px){
@@ -134,23 +134,24 @@ nav{
 }
 
 .main-menu a:hover{
-  background: #EE9E69;/*Додаткой колір світло оранжевий*/
+  background: #E67529;/*Додаткой колір світло оранжевий*/
+  color: white;
 }
 
 .col-sm-12 .main-menu .active{
-  background: #EE9E69;/*Додаткой колір світло оранжевий*/
+  background: #E67529;/*Додаткой колір світло оранжевий*/
 }
 
 .col-sm-12 .main-menu .active a{
   color: white;
   text-decoration: none;
-  border-left: 2px dotted #E47450;/*додатковий яскраво-оранжевий*/
+  border-left: 2px dotted #e6630c;/*додатковий яскраво-оранжевий*/
 } 
 
 .main-menu .dropdown-menu{
   position: absolute;
   list-style: none;
-  background: #EE9E69;/*Додаткой колір світло оранжевий*/
+  background: #E67529;/*Додаткой колір світло оранжевий*/
   width: 300px;
   padding: 0;
   margin-top: -1px;
@@ -221,7 +222,7 @@ article{
 }
 
 .two h2{
-  color:  #E47450;
+  color:  #E67529;
   margin-bottom: 20px;
 }
 
@@ -284,7 +285,10 @@ aside .hero-unit{
   color: white;
   line-height: 50px;
   text-align: center;
+}
 
+aside .hero-unit p{
+  text-align: center;
 }
 
 aside .hero-unit:hover {
@@ -297,7 +301,7 @@ aside p{
 }
 
 aside .muted {
-  color:  #E47450;
+  color:  #E67529;
   border-left: 2px dotted #EE9E69;
 }
 

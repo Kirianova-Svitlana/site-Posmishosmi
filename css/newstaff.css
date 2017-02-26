@@ -8,7 +8,7 @@ body, header .row, header .container, .middle{
 /* body, wrapper, footer
 -----------------------------------------------------------------------------*/
 body{
-  background-color:  #fdffa8;;
+  background-color:  #fdffa8;
   color:#5D7274;/*основний колір всього тексту сірий*/
   font: 14px/20px 'Caveat Brush', cursive;
   height: 100%;
@@ -48,7 +48,7 @@ body{
 /* header
 -----------------------------------------------------------------------------*/
 .header{
-  background: url(../images2/aniheader.png);
+  background: url(../images2/aniheader1.png);
   background-position: right top;
   background-repeat: no-repeat;
   padding: 0;
