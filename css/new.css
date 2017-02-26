@@ -1,6 +1,15 @@
+/* Використані кольори
+#5D7274 - основний колір всього тексту сірий
+#EE9E69 - Додаткой колір світло оранжевий (h1,h2)
+#e47450 - додатковий яскраво-оранжевий (hover,active)
+#74A516 - додатковий колір зелений
+#BFF08E - додатковий колір світло зелений(footer)
+*/
+
 /**{
   border: 1px solid;
 }*/
+
 body, header .row, header .container, .middle{
   margin: 0;
   padding: 0;
@@ -9,7 +18,7 @@ body, header .row, header .container, .middle{
 /* body, wrapper, footer
 -----------------------------------------------------------------------------*/
 body{
-  background-color: #fdffa8;
+  background-color: #f8e7ba;
   color:#5D7274;/*основний колір всього тексту сірий*/
   font: 14px/20px 'Caveat Brush', cursive;
   height: 100%;
@@ -17,7 +26,7 @@ body{
 }
 
 .wrapper, .footer, nav, .middle{
-  max-width: 1199px;
+  max-width: 1170px;
   min-width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -37,7 +46,7 @@ body{
 /* header
 -----------------------------------------------------------------------------*/
 .header{
-  background: url(../images2/aniheader2.png);
+  background: url(../images2/animals_header.png);
   background-position: right top;
   background-repeat: no-repeat;
   padding: 0;
@@ -65,7 +74,7 @@ body{
 .txt_napus1 {
   margin: 0;
   padding-left: 100px;
-  color: #E67529;/*Додаткой колір світло оранжевий*/
+  color: #EE9E69;/*Додаткой колір світло оранжевий*/
   text-transform: uppercase;
   margin-top: 2px;
 }
@@ -95,7 +104,7 @@ body{
 }
 
 .col-sm-5 a{
-  color: #e6630c;/*додатковий яскраво-оранжевий*/
+  color: #e47450;/*додатковий яскраво-оранжевий*/
 }
 
 @media(max-width: 768px){
@@ -134,24 +143,24 @@ nav{
 }
 
 .main-menu a:hover{
-  background: #E67529;/*Додаткой колір світло оранжевий*/
+  background: #EE9E69;/*Додаткой колір світло оранжевий*/
   color: white;
 }
 
 .col-sm-12 .main-menu .active{
-  background: #E67529;/*Додаткой колір світло оранжевий*/
+  background: #EE9E69;/*Додаткой колір світло оранжевий*/
 }
 
 .col-sm-12 .main-menu .active a{
   color: white;
   text-decoration: none;
-  border-left: 2px dotted #e6630c;/*додатковий яскраво-оранжевий*/
+  border-left: 2px dotted #e47450;/*додатковий яскраво-оранжевий*/
 } 
 
 .main-menu .dropdown-menu{
   position: absolute;
   list-style: none;
-  background: #E67529;/*Додаткой колір світло оранжевий*/
+  background: #EE9E69;/*Додаткой колір світло оранжевий*/
   width: 300px;
   padding: 0;
   margin-top: -1px;
@@ -194,6 +203,7 @@ nav .btn-group {
   position: relative;
   background: white;
   padding-top: 10px;
+  background: url();
 }
 
 .middle:after {
@@ -207,7 +217,6 @@ nav .btn-group {
   margin:0;
   position: relative;
   font-size: 120%;
-  text-align: justify;
 }
 
 article{
@@ -222,7 +231,7 @@ article{
 }
 
 .two h2{
-  color:  #E67529;
+  color:  #e47450;
   margin-bottom: 20px;
 }
 
@@ -281,7 +290,6 @@ aside .hero-unit{
   margin: 0;
   margin-left: 0;
   padding: 20px;
-  position: relative;
   color: white;
   line-height: 50px;
   text-align: center;
@@ -301,7 +309,7 @@ aside p{
 }
 
 aside .muted {
-  color:  #E67529;
+  color:  #e47450;
   border-left: 2px dotted #EE9E69;
 }
 
@@ -320,7 +328,7 @@ aside .muted {
   height: 200px;
   background: url(../images2/footer1.png);
   background-repeat: no-repeat;
-  background-color: #BFF08E;
+  background-color: #BFF08E;/*додатковий колір світло зелений*/
   text-align: center;
   font-size: 150%;
   padding-top: 50px;
