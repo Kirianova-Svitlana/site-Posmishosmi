@@ -1,15 +1,16 @@
 /* Використані кольори
 #f8e7ba - основний колір body світло-жовтий
 #5D7274 - основний колір всього тексту сірий
+#EBA830 - додатковий колір яскраво-жовтий
 #EE9E69 - Додаткой колір світло-оранжевий (h1,h2)
 #e47450 - додатковий яскраво-оранжевий (hover,active)
 #74A516 - додатковий колір зелений
 #BFF08E - додатковий колір світло-зелений(footer)
 */
 
-/**{
+*{
   border: 1px solid;
-}*/
+}
 
 body, header .row, header .container, .middle{
   margin: 0;
@@ -214,7 +215,7 @@ nav .btn-group {
 -----------------------------------------------------------------------------*/
 .middle {
   width: 100%;
-  padding: 0px;
+  padding: 0;
   margin-top: 0;
   position: relative;
   padding-top: 10px;
@@ -228,3 +229,24 @@ nav .btn-group {
   display: table;
   clear: both;
   content: '';
+}
+
+.middle .row{
+  padding: 0;
+  margin: 0;
+}
+
+.preschool{
+  background-color: #74A516;
+  color: white;
+}
+
+.adication{
+  background-color:#EBA830;
+  color: white;
+}
+
+.camp{
+  background-color:#e47450;
+  color: white;
+}
