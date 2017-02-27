@@ -1,14 +1,25 @@
+/* Використані кольори
+#f8e7ba - основний колір body світло-жовтий
+#5D7274 - основний колір всього тексту сірий
+#EE9E69 - Додаткой колір світло-оранжевий (h1,h2)
+#e47450 - додатковий яскраво-оранжевий (hover,active)
+#74A516 - додатковий колір зелений
+#BFF08E - додатковий колір світло-зелений(footer)
+*/
+
 /**{
   border: 1px solid;
 }*/
+
 body, header .row, header .container, .middle{
   margin: 0;
   padding:0;
 }
+
 /* body, wrapper, footer
 -----------------------------------------------------------------------------*/
 body{
-  background-color:  #fdffa8;
+  background-color:  #f8e7ba;/*основний колір body світло-жовтий*/
   color:#5D7274;/*основний колір всього тексту сірий*/
   font: 14px/20px 'Caveat Brush', cursive;
   height: 100%;
@@ -40,15 +51,17 @@ body{
 }
 
 @media(max-width: 768px){
-  .wrapper{margin-top: 0px;}
-  .footer{font-size: 90%;
+  .wrapper{
+    margin-top: 0px;}
+  .footer{
+    font-size: 90%;
     padding-top: 0px;}
 }
 
 /* header
 -----------------------------------------------------------------------------*/
 .header{
-  background: url(../images2/aniheader1.png);
+  background: url(../images2/animals_header.png);
   background-position: right top;
   background-repeat: no-repeat;
   padding: 0;
@@ -65,6 +78,7 @@ body{
     height: 90px;
     padding-top: 10px;}
 }
+
 /* Головний напис
 -----------------------------------------------------------------------------*/
 .txt_napus2{
@@ -86,9 +100,14 @@ body{
 }
 
 @media(max-width: 768px){
-  .txt_napus2{padding-left: 60px; font-size: 120%;}
-  .txt_napus1{padding-left: 35px; font-size: 140%;}
-  .text-left{font-size: 120%;}
+  .txt_napus2{
+    padding-left: 60px;
+    font-size: 120%;}
+  .txt_napus1{
+    padding-left: 35px;
+    font-size: 140%;}
+  .text-left{
+    font-size: 120%;}
 }
 
 /* Контакти
@@ -100,11 +119,12 @@ body{
 }
 
 .col-sm-5 a{
-  color: #E47450;/*додатковий яскраво-оранжевий*/
+  color: #e47450;/*додатковий яскраво-оранжевий*/
 }
 
 @media(max-width: 768px){
-  .col-sm-5{ display: none;}
+  .col-sm-5{
+    display: none;}
 }
 
 /* меню сайту
@@ -177,10 +197,17 @@ nav .btn-group {
 }
 
 @media (max-width: 768px) {
-  .main-menu a{font-size: 10px;border-left: 0;}
-  .main-menu > li{padding: 0px;margin: 0px;margin-right: -7px;}
-  .main-menu {margin-left: -12px;}
-  .main-menu .dropdown-menu{width: 220px;}
+  .main-menu a{
+    font-size: 10px;
+    border-left: 0;}
+  .main-menu > li{
+    padding: 0px;
+    margin: 0px;
+    margin-right: -7px;}
+  .main-menu {
+    margin-left: -12px;}
+  .main-menu .dropdown-menu{
+    width: 220px;}
 }
 
 /* Middle
@@ -232,11 +259,11 @@ nav .btn-group {
 .blockquote-reverse footer{
   color: #74A516;
 }
+
 @media (max-width: 768px){
   .col-sm-4 .thumbnail img{
-  height: 240px;
-  width: 302px;
-  }
+    height: 240px;
+    width: 302px;}
   .middle h1{
     padding-top: 5px;
     font-size: 120%;}

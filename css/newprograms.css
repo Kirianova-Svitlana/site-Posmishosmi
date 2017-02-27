@@ -13,13 +13,13 @@
 
 body, header .row, header .container, .middle{
   margin: 0;
-  padding: 0;
+  padding:0;
 }
 
 /* body, wrapper, footer
 -----------------------------------------------------------------------------*/
 body{
-  background-color: #f8e7ba;
+  background-color:  #f8e7ba;/*основний колір body світло-жовтий*/
   color:#5D7274;/*основний колір всього тексту сірий*/
   font: 14px/20px 'Caveat Brush', cursive;
   height: 100%;
@@ -52,10 +52,10 @@ body{
 
 @media(max-width: 768px){
   .wrapper{
-    margin-top: 0;}
+    margin-top: 0px;}
   .footer{
     font-size: 90%;
-    padding-top: 0;}
+    padding-top: 0px;}
 }
 
 /* header
@@ -76,8 +76,7 @@ body{
   .header{
     background-size: 100px;
     height: 90px;
-    padding-top: 10px;
-  }
+    padding-top: 10px;}
 }
 
 /* Головний напис
@@ -107,22 +106,25 @@ body{
   .txt_napus1{
     padding-left: 35px;
     font-size: 140%;}
-  .text-left{font-size: 120%;}
+  .text-left{
+    font-size: 120%;}
 }
 
 /* Контакти
 -----------------------------------------------------------------------------*/
 .col-sm-5 {
-  margin-top:0;
+  margin-top:0px;
   font-size: 140%;
   padding-top: 40px;
 }
 
 .col-sm-5 a{
-  color: #E47450;/*додатковий яскраво-оранжевий*/
+  color: #e47450;/*додатковий яскраво-оранжевий*/
 }
+
 @media(max-width: 768px){
-  .col-sm-5{ display: none;}
+  .col-sm-5{
+    display: none;}
 }
 
 /* меню сайту
@@ -144,7 +146,7 @@ nav{
 .main-menu > li{
   position: relative;
   display:inline-block;
-  margin-right: 0; 
+  margin-right: 0px; 
   padding: 0 10px 0 0;
  }
 
@@ -158,10 +160,9 @@ nav{
 
 .main-menu a:hover{
   background: #EE9E69;/*Додаткой колір світло оранжевий*/
-  color: white;
 }
 
- .col-sm-12 .main-menu .active{
+.col-sm-12 .main-menu .active{
   background: #EE9E69;/*Додаткой колір світло оранжевий*/
 }
 
@@ -217,6 +218,9 @@ nav .btn-group {
   margin-top: 0;
   position: relative;
   padding-top: 10px;
+  background: url(../images2/bird.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
   background-color: white;
 }
 
@@ -224,67 +228,3 @@ nav .btn-group {
   display: table;
   clear: both;
   content: '';
-}
-
-.middle .one {
-  padding-top: 10px;
-  border-top: 2px dotted #5D7274;
-}
-
-form h2 {
-  color: #e47450;
-}
-
-form, form .row{
-  padding: 0;
-  margin: 0;
-}
-
-.forma3 {
-  padding: 0;
-  margin: 0;
-}
-
- .forma3 .text-right p{
-  padding: 10px 10px 0;
-  margin: 0;
-  font-size: 16px;
-  
-}
-
-.forma1 .col-sm-4, .forma .col-sm-2, .forma .col-sm-1, .forma2 .col-sm-4, .forma3 .col-sm-6{
-  padding: 10px 10px 0;
-}
-
-.forma3 .col-sm-3{
-  padding: 10px 10px 0;
-}
-
-.forma4{
-  position: relative;
-  width: 100%;
-  margin-top:10px; 
-  margin-bottom: 10px;
-}
-
-.forma5{
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px){
-  iframe{
-    width:100%;}
-  .one h4{
-    font-size: 14px;}
-  p{
-    font-size: 12px;}
-  form h2 {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 1200px){
-  iframe{
-    width:100%;
-  }
-}

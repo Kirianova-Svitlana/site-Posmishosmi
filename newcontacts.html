@@ -3,7 +3,7 @@
   <head>
     <title>Cадочок Посмішка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Домашній християнський садочок Посмішка"><!-- данный тег необходим для поисковой оптимизации сайта. Он сообщает поисковым машинам о содержании страницы. Одной из лучших SEO-практик является создание и применение данного тега-->
+    <meta name="description" content="Домашній християнський садочок Посмішка">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/newcontacts.css" rel="stylesheet" media="screen"> 
@@ -37,11 +37,11 @@
       <nav>
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-xs-12 col-sm-12">
               <ul class="main-menu">
-                <li ><a href="#"><strong>Головна</strong></a>
+                <li ><a href="./index.html"><strong>Головна</strong></a>
                 </li>
-                <li><a href="#"><strong>Про нас</strong></a>
+                <li><a href="./newabuot.html"><strong>Про нас</strong></a>
                 </li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Програми</strong><b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -51,9 +51,9 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="#"><strong>Наші вчителі</strong></a>
+                <li><a href="./newstaff.html"><strong>Наші вчителі</strong></a>
                 </li>
-                <li class="active"><a href=""><strong>Контакти</strong></a>
+                <li class="active"><a href="./newcontacts.html"><strong>Контакти</strong></a>
                 </li>
               </ul>
             </div>
@@ -76,23 +76,87 @@
       </nav>
 <!--middle--> 
       <div class="middle">
-        <div class="container">
+        <div class="container one">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-xs-12 col-sm-6">
+              <h4>м. Львів</h4>
+              <p>Пл. Григоренка 5/17</p>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.2553894186412!2d24.022809018286463!3d49.842052457920666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add73cfe7ffdb%3A0xf68a0ac01c2b8178!2z0LLRg9C70LjRhtGPINCQ0LrQsNC00LXQvNGW0LrQsCDQk9C90LDRgtGO0LrQsCwgMjYsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1488103521547" width="550" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div><!--col-sm-6-->
-            <div class="col-sm-6">
+            <div class="col-xs-12 col-sm-6">
+              <h4>м. Винники</h4>
+              <p>Вул. Винна Гора 12/3</p>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.0220941214093!2d24.138329514986314!3d49.8232499402395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ac25dd7d90a03%3A0x88bbdfb7dd16d5a8!2z0LLRg9C70LjRhtGPINCS0LjQvdC90LAg0JPQvtGA0LAsIDEyLCDQktC40L3QvdC40LrQuCwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTQ5NQ!5e0!3m2!1sru!2sua!4v1488103602373" width="550" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div><!--col-sm-6-->
           </div><!--row-->
-        </div><!--container-->
-        <div class="conteiner">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1>Форма зв'язку</h1>
+        </div><!--container -->
+        <form>
+          <h2 class="text-center">Напишіть нам...</h2>
+          <div class="conteiner forma1">
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="text" class="form-control" name="name user" placeholder="Введіть ваше ім'я">
+              </div><!--col-sm-4-->
+              <div class="col-sm-4">
+                <input type="email" class="form-control" name="email user" placeholder="Введіть ваш email">
+              </div><!--col-sm-4-->
+              <div class="col-sm-4">
+                <input type="tel" class="form-control" name="phone user" placeholder="Введіть номер телeфону">
+              </div><!--col-sm-4-->
+            </div><!--row-->
+          </div><!--conteiner forma-->
+          <div class="conteiner forma2">
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="checkbox" name="пробне заняття">
+                <label for="probne_zaniattia">Бажаю відвідати пробне заняття</label>
+              </div><!--col-sm-4-->
+              <div class="col-sm-4">
+                <label>
+                  <input type="radio" name="sity" value="Львів">Львів
+                </label>
+              </div><!--col-sm-4-->
+              <div class="col-sm-4">
+                <label>
+                  <input type="radio" name="sity" value="Винники">Винники
+                </label>
+              </div><!--col-sm-4-->
+            </div><!--row-->
+          </div><!--conteiner forma2-->
+          <div class="container forma3">
+            <div class=row>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="nameBaby" placeholder="Введіть ім'я дитини">
+              </div> <!--col-sm-3-->
+              <div class="col-sm-3 text-right">
+                <p> Оберіть вік дитини:</p>
+              </div>
+              <div class="col-sm-3">
+                <select class="form-control" name="babyOld" >
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                </select>
+              </div> <!--col-sm-1-->
+            </div><!--row-->
+          </div> <!--conteiner forma3-->
+          <div class="conteiner forma4">
+            <div class="row">
+              <div class="col-sm-12">
+                <textarea class="form-control" name="comment" rows="10">Текст повідомлення</textarea>
+              </div>
+            </div>
+          </div><!--conteiner forma4-->
+          <div class="conteiner forma5">
+            <div class="row">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-default ">Відправити</button>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </div><!--middle-->
       <footer class="footer">
         <div class="container">
