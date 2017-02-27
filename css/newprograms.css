@@ -8,9 +8,9 @@
 #BFF08E - додатковий колір світло-зелений(footer)
 */
 
-*{
+/**{
   border: 1px solid;
-}
+}*/
 
 body, header .row, header .container, .middle{
   margin: 0;
@@ -249,4 +249,46 @@ nav .btn-group {
 .camp{
   background-color:#e47450;
   color: white;
+}
+
+.preschool h2, .adication h2, .camp h2{
+  border-left: 2px dotted white;
+  padding-left: 40px;
+}
+
+.preschool p, .adication p, .camp p{
+  padding-left: 40px;
+  text-align: justify;
+}
+
+.programs h1, .addschool h2{
+  color: #e47450;
+}
+
+.english h4, .spanish h4, .addschool h4{
+  color: #EE9E69;
+}
+
+.english p, .spanish p, .addschool{
+  text-align: justify;
+
+}
+
+.prog {
+  margin-bottom: 20px;
+}
+
+.addschool .col-sm-12{
+  border-top: 2px dotted #5D7274;
+}
+
+.col-sm-2{
+  margin: 0;
+  padding: 0;
+
+}
+
+img{
+  width: 100%;
+  margin-top: 17%;
 }
