@@ -246,6 +246,10 @@ nav .btn-group {
   float: left;
 }
 
+.col-sm-4 img{
+  width: 100%;
+}
+
 .one .col-sm-8{
   text-indent: 30px;
 
@@ -297,7 +301,26 @@ nav .btn-group {
   margin-bottom: 25px;
 }
 
-@media(max-width: 768px){
+
+  .one, .two, .three{
+    font-size: 90%;}
+  .two .text-center, .one .text-center{
+  margin-bottom: 5px;}
+  .three .col-sm-4 .thumbnail{
+  height: 440px;}
+  .three .col-sm-4 .thumbnail img{
+  height: 240px;
+  width: 302px;}
+  .one .col-sm-4 img{
+    height: 240px;
+    width: 100%;}
+  .one h1, .two h1, .three h1{
+    font-size: 150%;}
+  .text-center {
+    font-size: 140%;}
+}
+
+@media(max-width: 1024px){
   .one, .two, .three{
     font-size: 90%;}
   .two .text-center, .one .text-center{
