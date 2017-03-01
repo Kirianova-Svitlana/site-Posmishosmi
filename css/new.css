@@ -80,7 +80,7 @@ body{
 .posmishka{
   color: #EE9E69;/*Додаткой колір світло оранжевий*/
   text-transform: uppercase;
-  margin-bottom: 4%;
+  margin-bottom: 2.5%;
   padding-left: 16%;
   padding-top: 0;
   margin-top: 0;
@@ -306,7 +306,7 @@ nav{
   }
 /* first level */
   #nav > ul {
-  height: auto;
+  height: 200px; /*висота самого меню прихованого*/
   background: white;
   display: none;
   position: absolute;
@@ -318,10 +318,12 @@ nav{
   }
   #nav > ul > li {
   width: 100%;
+  height: 40px;/*висота комірок в прих меню*/
   float: none;
   }
   #nav > ul > li > a {
   height: auto;
+  height: 40px;/*висота шрифту*/
   text-align: left;
   padding: 0 0.833em; /* 20 (24) */
   }
