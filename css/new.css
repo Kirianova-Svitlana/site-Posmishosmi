@@ -8,158 +8,114 @@
 #BFF08E - додатковий колір світло-зелений(footer)
 */
 
-/**{
-  border: 1px solid;
-}*/
-
-body, header .row, header .container, .middle{
+*{
+  /*border: 1px solid;*/
   margin: 0;
   padding: 0;
 }
-
-/* body, wrapper, footer
------------------------------------------------------------------------------*/
+/*-----BODY----------------------------*/
 body{
   background-color: #f8e7ba;
   color:#5D7274;/*основний колір всього тексту сірий*/
   font: 14px/20px 'Caveat Brush', cursive;
   height: 100%;
   overflow: scroll;
+  margin: 0;
+  padding:0;
 }
 
-.wrapper, .footer, nav, .middle{
-  max-width: 1170px;
+.wrapper {
+  max-width: 1199px;
   min-width: 300px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   padding: 0;
-}
-
-.wrapper {
+  margin-top: 40px;
   background-color: white;
-  margin-top: 46px;
 }
 
-@media(max-width: 768px){
-  .wrapper{margin-top: 0;}
-}
-
-/* header
------------------------------------------------------------------------------*/
+/*-----header----------------------------*/
 .header{
+  position: relative;
+  height: 100%;
   background: url(../images2/animals_header.png);
+  background-color: white;
   background-position: right top;
   background-repeat: no-repeat;
+  z-index: 10;
+}
+.logo{
+  margin: 0;
   padding: 0;
-  padding-top: 30px;
+}
+
+.row{
   width: 100%;
-  position: relative;
-  height: 200px;
-  z-index: 100;
+  margin: 0;
+  padding: 0;
 }
 
-@media(max-width: 768px){
-  .header{
-    background-size: 100px;
-    height: 90px;
-    padding-top: 10px;
-  }
-}
-/* Головний напис
------------------------------------------------------------------------------*/
-.txt_napus2{
-  margin: 0;
-  padding-left: 140px;
-}
-
-.txt_napus1 {
-  margin: 0;
-  padding-left: 100px;
+.posmishka{
   color: #EE9E69;/*Додаткой колір світло оранжевий*/
   text-transform: uppercase;
-  margin-top: 2px;
+  margin-top: 0;
 }
 
-.text-left{
-  margin: 0;
-  margin-top: 20px;
+.address{
+  padding-top: 22px;
 }
 
-@media(max-width: 768px){
-  .txt_napus2{
-    padding-left:60px;
-    font-size: 120%;}
-  .txt_napus1{
-    padding-left: 35px;
-    font-size: 140%;}
-  .text-left{
-    font-size:120%;}
-}
-
-/* Контакти
------------------------------------------------------------------------------*/
-.col-sm-5 {
-  margin-top:0px;
-  font-size: 140%;
-  padding-top: 40px;
-}
-
-.col-sm-5 a{
+.address a{
   color: #e47450;/*додатковий яскраво-оранжевий*/
 }
 
-@media(max-width: 768px){
-  .col-sm-5{display: none;}
-}
-
-/* меню сайту
------------------------------------------------------------------------------*/
-nav{
-  background: white;
-  width: 100%;
-  position: relative;
-}
-
-.main-menu{
+/*-----navigation----------------------------*/
+.nav .main-menu {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 18px;
+  font-size: 19px;
   width: 100%;
 }
 
-.main-menu > li{
-  position: relative;
+.nav .main-menu > li {
+ position: relative;
   display:inline-block;
-  margin-right: 0;
-  padding: 0 10px 0 0;
- }
+  margin-right: 0; 
+  padding: 0;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
 
-.main-menu a{
+.nav .main-menu a {
   display: block;
   border-left: 2px dotted #77746c;
   color: #5D7274;
-  padding: 5px;
+  padding: 5px 10px;
   text-decoration: none;
 }
 
-.main-menu a:hover{
-  background: #EE9E69;/*Додаткой колір світло оранжевий*/
+.nav .main-menu a:hover {
+  background: #EE9E69;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
   color: white;
+  border-left: 2px dotted #E47450 ;
 }
 
-.col-sm-12 .main-menu .active{
-  background: #EE9E69;/*Додаткой колір світло оранжевий*/
+.nav .main-menu .active{
+  background: #EE9E69;
 }
 
-.col-sm-12 .main-menu .active a{
+.nav .main-menu .active a{
   color: white;
   text-decoration: none;
-  border-left: 2px dotted #e47450;/*додатковий яскраво-оранжевий*/
-} 
+  border-left: 2px dotted #E47450 ;
+}
 
-.main-menu .dropdown-menu{
+.nav .main-menu .dropdown-menu{
   position: absolute;
   list-style: none;
   background: #EE9E69;/*Додаткой колір світло оранжевий*/
@@ -168,60 +124,94 @@ nav{
   margin-top: -1px;
   display: none;
   z-index: 10;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 
-.main-menu .dropdown-menu a{
+.nav .main-menu .dropdown-menu a{
   color: white;
   border: none;
 }
 
-.main-menu >li:hover .dropdown-menu{
+.nav .main-menu >li:hover .dropdown-menu{
   display: block;
 }
 
-nav .btn-group {
+.nav .main-menu .dropdown-menu a:hover{
+  color: #EE9E69;
+  background: white;
+  border: none;
+}
+
+.nav .btn-group {
   display: none;
 }
 
-input[type="checkbox"] {
-    display: none;
-}
-nav label {    
-    display: none;
-    border: 1px solid #fff;   
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-nav label:hover{
-    color: #f00;
-    border: 1px solid #f00;
+.nav .right .main-menu{
+  text-align: left;
 }
 
-@media (max-width: 768px) {
+.nav .main-menu{
+  margin: 0;
+  padding: 0;
+}
 
-  .main-menu a{
-    font-size: 10px;
-    border-left:0;}
-  .main-menu > li{
-    padding: 0;
+@media screen and (max-width: 700px) {
+  .nav {
+    position: relative;
+    min-height: 40px;
+  } 
+  .nav .main-menu {
+    width: 180px;
+    padding:0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+  .nav .main-menu a{
+    color:#EE9E69;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    padding: 5px 5px;
+  }
+  .nav .main-menu > li {
+    display: none; /* скрыть все <li> пункты */
     margin: 0;
-    margin-right: -7px;}
-  .main-menu {
-    margin-left: -12px;}
-  .main-menu .dropdown-menu{
-    width: 220px;}
+  }
+  .nav .main-menu .active {
+    display: block; /* показывать только текущие активные <li> пункты */
+  }
+  .nav .main-menu .active a {
+    background: #EE9E69;/*Додаткой колір світло-оранжевий */
+    color: white;
+  }
+  .nav .main-menu >li:hover .dropdown-menu{
+    display: none;
+  }
+  /* при наведенні на пункти меню */
+  .nav .main-menu:hover {
+    background:none;
+  }
+  .nav .main-menu:hover li {
+    display: block;
+    margin: 0 0 5px;
+  }
+  .nav .main-menu:hover .active {
+    background: 10px 7px;
+  }
 }
 
-/* Middle
------------------------------------------------------------------------------*/
+/*-----middle----------------------------*/
+
 .middle {
   width: 100%;
-  padding: 0px;
+  padding: 0;
   position: relative;
-  background: white;
-  padding-top: 10px;
-  background: url();
 }
 
 .middle:after {
@@ -230,130 +220,86 @@ nav label:hover{
   content: '';
 }
 
-.middle .col-sm-8{
-  padding: 0;
-  margin:0;
+.article{
   position: relative;
-  font-size: 120%;
+  padding: 0;
+  padding-top: 15px;
+  margin: 0;
+  width: 100%;
+  
 }
 
-article{
+.article .lessons{
+  padding: 0;
+  margin: 0;
   color: white;
   text-align: center;
   background: #74A516;/*додатковий колір зелений*/
-  padding-bottom: 20px;
+}
+
+.article img{
+  position: relative;
+  width: 120%;
+  margin: 0;
 }
 
 .two{
-  padding: 20px 0 40px 20px;
+  background-color: white;
+  color: #5D7274; /*основний колір всього тексту сірий*/
 }
 
-.two h2{
-  color:  #e47450;
-  margin-bottom: 20px;
+.two .text-center{
+  color: #e47450;/*додатковий яскраво-оранжевий*/
 }
 
-.col-sm-4 img{
-  height: 290px;
-  width: 300px;
+aside{
+  padding: 0;
+  margin: 0;
+}
+
+.middle .start{
+  padding: 0;
+  margin: 0;
+}
+
+.middle .hero-unit{
+  text-align: center;
+  background-color: #EBA830;/*додатковий колір яскраво-жовтий*/
+  color: white;
+  padding:10px 0;
+}
+
+.Misia h3, .navchannia h3, .dly_kogo h3 {
+  color: #EBA830;
+}
+
+.Misia p, .navchannia p, .dly_kogo p{
+  text-align: justify;
+}
+
+.three .col-md-4 img{
+  height: 250px;
+  width: 260px;
   margin: 0 auto;
   position: relative;
   cursor: pointer;
-  left: -100px;
+  left: -200px;
   transition: left 5s cubic-bezier(0, 0, 1, 1);
 }
 
-.two li{
+.three .col-md-4 h2{
+  color:#EE9E69; 
+}
+
+.three .col-md-4 li{
   list-style-type: none;
   color: #77746c;
-  font-size: 120%;
-  padding-bottom: 10px;
-}
-
-.two p{
-  font-size: 120%;
-}
-
-.two ul{
-  padding-left: 0;
-}
-
-@media (max-width: 768px){
-  article img{
-    height: 80%;
-    width: 100%;}
-  article .lessons{
-    font-size: 80%;}
-  article h3{
-    font-size: 90%;}
-  .two img{
-    display: none;}
-  .two .text-left{
-    font-size: 90%;
-    padding: 0;
-    margin: 0;
-    text-align: center;}
-  .two .text-center{
-    font-size: 100%;}
-  .two .col-sm-3 li{
-    font-size: 90%;
-    padding-bottom: 3px;}
-}
-
-aside .hero-unit{
-  background: #EBA830; /*додатковий колір жовтий*/
-  height: 80%;
-  position: relative;
-  width: 100%;
-  margin: 0;
-  margin-left: 0;
-  padding: 20px;
-  color: white;
-  line-height: 50px;
-  text-align: center;
-}
-
-aside .hero-unit p{
-  text-align: center;
-}
-
-aside .hero-unit:hover {
-  box-shadow: 0 25px 25px -15px rgba(0,0,0, .5);
-}
-
-aside p{
-  font-size: 16px;
-  text-align:justify;
-}
-
-aside .muted {
-  color:  #e47450;
-  border-left: 2px dotted #EE9E69;
-}
-
-@media (max-width: 768px){
-  .col-sm-4 aside .hero-unit{
-    height: 30%;
-    width: 100%;
-    padding: 10px;
-    line-height: 20px;}
-  aside p{
-    font-size: 90%;}
-  aside h3{
-    font-size: 120%;}
 }
 
 .footer {
-  height: 200px;
   background: url(../images2/footer1.png);
   background-repeat: no-repeat;
   background-color: #BFF08E;/*додатковий колір світло зелений*/
   text-align: center;
   font-size: 150%;
-  padding-top: 50px;
-}
-
-@media(max-width: 768px){
-  .footer{font-size: 90%;
-    padding-top: 0;}
 }
