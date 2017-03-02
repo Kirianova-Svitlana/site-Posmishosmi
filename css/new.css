@@ -26,7 +26,6 @@ body{
   color:#5D7274;/*основний колір всього тексту сірий*/
   font: 14px/20px 'Caveat Brush', cursive;
   height: 100%;
-  min-width: 300px;
   overflow: scroll;
   margin: 0;
   padding:0;
@@ -86,7 +85,7 @@ body{
   margin-top: 0;
 }
 
-.small {
+.small{
   padding-left: 25%;
 }
 
@@ -103,11 +102,28 @@ body{
   color: #e47450;/*додатковий яскраво-оранжевий*/
 }
 
+@media screen and (max-width: 826px){
+  .small, .posmishka{
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 770px){
   .address1 address{
     float: left;
   }
+   .small{
+    padding-left: 25%;
+   }
+  .posmishka{
+    padding-left: 16%;
+  } 
+}
 
+@media screen and (max-width: 484px){
+  .small, .posmishka{
+    padding-left: 0;
+  }
 }
 
 /*-----navigation----------------------------*/
@@ -268,11 +284,31 @@ nav{
   color: white;
 }
 
-@media only screen and ( max-width: 1000px ) /* 1000 */ {
+@media only screen and ( max-width: 991px ) /* 1000 */ {
   #nav {
     width: 100%;
     position: static;
     margin: 0;
+    margin-left: -19%;
+  }
+}
+
+@media only screen and ( max-width: 960px ) /* 1000 */ {
+  #nav {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-left: -10%;
+    left: auto;
+  }
+}
+
+@media only screen and ( max-width: 823px ) /* 1000 */ {
+  #nav {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-left: -5%;
   }
 }
 
@@ -283,7 +319,6 @@ nav{
   #nav {
   position: relative;
   top: auto;
-  left: auto;
   }
   #nav > a { /*кнопка що зявляється*/
   width: 50px; /* 50 */
@@ -345,6 +380,24 @@ nav{
   }
 }
 
+@media screen and (max-width: 1199px){
+  #nav {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-left: -10%;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  #nav {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-left: 0;
+  }
+}
+
 
 /*-----middle----------------------------*/
 
@@ -360,6 +413,18 @@ nav{
   display: table;
   clear: both;
   content: '';
+}
+
+@media screen and (max-width: 1000px){
+  .middle{
+     padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .middle{
+     padding-top: 0;
+  }
 }
 
 .article{
