@@ -71,7 +71,7 @@ body{
   font-family: 'Bad Script', cursive;
   font-family: 'Alice', serif;
   */
-  
+
   margin: 0;
   padding: 0;
 }
@@ -265,7 +265,7 @@ nav{
   position: absolute;
   top: 100%;/*на яку висоту опустити підменю*/
   padding-left: 0px;
-  width: 300px;
+  width: 350px;
 }
 
 #nav li:hover ul {
@@ -283,7 +283,7 @@ nav{
   border-top: none;
   padding: 0; /* 15 (20) */
   text-align: left;
-  height: 40px; /*висота кожного а*/
+  height: 30px; /*висота кожного а*/
 }
 
 #nav li ul li a:hover, #nav li ul:not( :hover ) li.active a {
