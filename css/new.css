@@ -24,7 +24,8 @@ html, body {
 body{
   background-color: #f8e7ba;
   color:#5D7274;/*основний колір всього тексту сірий*/
-  font: 14px/20px 'Caveat Brush', cursive;
+  font: 14px/20px ;
+  font-family: 'Open Sans', sans-serif;
   height: 100%;
   overflow: scroll;
   margin: 0;
@@ -66,9 +67,15 @@ body{
   z-index: 10;
 }
 .logo{
+  /*
+  font-family: 'Bad Script', cursive;
+  font-family: 'Alice', serif;
+  */
+  
   margin: 0;
   padding: 0;
 }
+
 
 .row{
   width: 100%;
@@ -80,6 +87,7 @@ body{
   color: #EE9E69;/*Додаткой колір світло оранжевий*/
   text-transform: uppercase;
   margin-bottom: 2.5%;
+  font-size: 280%;
   padding-left: 16%;
   padding-top: 0;
   margin-top: 0;
@@ -94,7 +102,7 @@ body{
 }
 
 .address1{
-  font-size: 130%;
+  font-size: 160%;
   padding-top: 3%;
 }
 
