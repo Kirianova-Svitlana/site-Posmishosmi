@@ -484,6 +484,7 @@ nav{
   text-align: center;
   padding-top: 13px;
   float: left;
+  vertical-align:middle;
 }
 
 .block::after {
